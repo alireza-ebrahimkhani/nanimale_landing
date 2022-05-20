@@ -8,6 +8,7 @@ body {
   color: black;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -16,7 +17,7 @@ html {
 
 @media only screen and (min-width: 1741px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -70,6 +71,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  margin: 3rem auto;
 }
 
 .article-content p {
@@ -78,6 +80,8 @@ body {
 
 @media only screen and (max-width: 599px) {
   .article-content {
+    width: 100%;
+    padding: 0 3rem;
     position: relative;
     top: unset;
     left: unset;
@@ -164,6 +168,14 @@ body {
   .shape3 {
     top: 20vh;
     left: 10%;
+    transform: translate(0%, 0%);
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .shape3 {
+    top: 0;
+    left: 3%;
     transform: translate(0%, 0%);
   }
 }
